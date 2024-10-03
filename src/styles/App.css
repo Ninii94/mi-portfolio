@@ -1,0 +1,371 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #f3e7ff, #fff0f7);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header y Perfil */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d8b4fe;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  color: #6b21a8;
+  margin-bottom: 15px;
+}
+
+/* Sección de Experiencia */
+.experience {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.experience h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.skills-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.skills-card h3 {
+  color: #be185d;
+  margin-bottom: 15px;
+}
+
+.skills-card ul {
+  list-style: none;
+}
+
+.skills-card li {
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.skills-card li:hover {
+  color: #6b21a8;
+}
+
+/* Contacto */
+.contact {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+  margin-top: 40px;
+}
+
+.contact h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(10px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Estilos para la sección de Idiomas */
+.languages {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.languages h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.language-card {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.language-card h3 {
+  color: #be185d;
+  margin-bottom: 10px;
+}
+
+.level {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #f3e8ff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 1s ease-out;
+}
+
+.native {
+  width: 100%;
+  background: #be185d;
+}
+
+.advanced {
+  width: 90%;
+  background: #d946ef;
+}
+
+.basic {
+  width: 30%;
+  background: #e879f9;
+}
+
+/* Estilos para la sección de Educación */
+.education {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.education h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.education-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.education-card h3 {
+  color: #be185d;
+  margin-bottom: 5px;
+}
+
+.education-card h4 {
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.degree {
+  color: #4a5568;
+}
+
+.status {
+  color: #6b21a8;
+  font-weight: bold;
+}
+
+/* Estilos para la sección de Habilidades de Diseño */
+.design-skills {
+  margin-top: 40px;
+}
+
+.design-skills h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.design-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.design-card h3 {
+  color: #be185d;
+  margin-bottom: 15px;
+}
+
+.design-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+
+.design-card li {
+  padding: 8px;
+  background: #fdf4ff;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.design-card li:hover {
+  background: #f5d0fe;
+  transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .languages-grid,
+  .design-card ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Additional Skills Styles */
+.additional-skills {
+  margin-top: 2px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.additional-skills h2 {
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.additional-skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.additional-skills li {
+  padding: 10px;
+  background: #fdf4ff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.additional-skills li:hover {
+  background: #f5d0fe;
+  transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skills-grid,
+  .design-card ul,
+  .additional-skills ul {
+    grid-template-columns: 1fr;
+  }
+}
